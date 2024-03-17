@@ -94,5 +94,5 @@ export const createEslintRule: <TOptions extends readonly unknown[], TMessageIds
  * @returns A function that creates an ESLint rule with the provided documentation URL.
  */
 export function createESLintRuleBuilder(docsUrl: string): typeof createEslintRule {
-  return RuleCreator((ruleName) => `${docsUrl}/${ruleName}`)
+  return RuleCreator((ruleName) => `${docsUrl.replace('$RULE_NAME', ruleName)}`)
 }
