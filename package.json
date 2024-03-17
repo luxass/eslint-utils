@@ -1,6 +1,6 @@
 {
   "name": "@luxass/eslint-utils",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "GitHub's GraphQL schema",
   "type": "module",
   "author": {
