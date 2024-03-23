@@ -8,10 +8,14 @@ function walk(node: TSESTree.Node, visitor: NodeVisitor): boolean {
   }
 
   for (const key in node) {
+    // @ts-expect-error - yes yes yes
     if (node[key] && typeof node[key] === 'object') {
+    // @ts-expect-error - yes yes yes
       if (node[key].type && walk(node[key], visitor)) {
         return true
+        // @ts-expect-error - yes yes yes
       } else if (Array.isArray(node[key])) {
+        // @ts-expect-error - yes yes yes
         for (const child of node[key]) {
           if (child.type && walk(child, visitor)) {
             return true
