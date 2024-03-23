@@ -34,6 +34,26 @@
         "default": "./dist/index.cjs"
       }
     },
+    "./variables": {
+      "import": {
+        "types": "./dist/variables.d.ts",
+        "default": "./dist/variables.mjs"
+      },
+      "require": {
+        "types": "./dist/variables.d.cts",
+        "default": "./dist/variables.cjs"
+      }
+    },
+    "./predicates": {
+      "import": {
+        "types": "./dist/predicates.d.ts",
+        "default": "./dist/predicates.mjs"
+      },
+      "require": {
+        "types": "./dist/predicates.d.cts",
+        "default": "./dist/predicates.cjs"
+      }
+    },
     "./package.json": "./package.json"
   },
   "main": "dist/index.cjs",

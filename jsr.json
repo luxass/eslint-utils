@@ -2,7 +2,9 @@
   "name": "@luxass/eslint-utils",
   "version": "0.0.4",
   "exports": {
-    ".": "./src/index.ts"
+    ".": "./src/index.ts",
+    "./variables": "./src/variables.ts",
+    "./predicates": "./src/predicates.ts"
   },
   "exclude": [
     "tsup.config.ts",
