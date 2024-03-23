@@ -1,5 +1,4 @@
-import { parse } from '@typescript-eslint/typescript-estree'
-import type { AST, TSESTree, TSESTreeOptions } from '@typescript-eslint/typescript-estree'
+import type { TSESTree } from '@typescript-eslint/typescript-estree'
 
 type NodeVisitor = (node: TSESTree.Node) => boolean
 

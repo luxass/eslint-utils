@@ -1,4 +1,4 @@
-import { assertType, describe, expect, it } from 'vitest'
+import { describe, expect, it } from 'vitest'
 import { parse } from '@typescript-eslint/typescript-estree'
 import type { TSESTree } from '@typescript-eslint/utils'
 import {
