@@ -8,7 +8,7 @@
     "email": "lucasnrgaard@gmail.com",
     "url": "https://luxass.dev"
   },
-  "packageManager": "pnpm@8.15.4",
+  "packageManager": "pnpm@8.15.5",
   "license": "MIT",
   "homepage": "https://github.com/luxass/eslint-utils",
   "repository": {
@@ -69,19 +69,23 @@
     "build": "tsup",
     "dev": "tsup --watch",
     "lint": "eslint .",
+    "test": "vitest --run",
+    "test:watch": "vitest",
     "typecheck": "tsc --noEmit"
   },
   "peerDependencies": {
     "eslint": ">=8.40.0"
   },
   "devDependencies": {
-    "@luxass/eslint-config": "^4.2.10",
-    "@types/eslint": "^8.56.5",
+    "@luxass/eslint-config": "^4.2.11",
+    "@types/eslint": "^8.56.6",
     "@types/node": "^18.19.0",
-    "@typescript-eslint/utils": "^7.2.0",
+    "@typescript-eslint/scope-manager": "^7.3.1",
+    "@typescript-eslint/utils": "^7.3.1",
     "eslint": "^8.57.0",
     "eslint-plugin-format": "^0.1.0",
     "tsup": "^8.0.2",
-    "typescript": "^5.4.2"
+    "typescript": "^5.4.3",
+    "vitest": "^1.4.0"
   }
 }

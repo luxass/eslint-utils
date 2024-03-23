@@ -15,22 +15,17 @@ export function getReturnedVariable(node: TSESTree.Statement): TSESTree.Identifi
     : undefined
 }
 
-export interface DeclaredVariable {
-  id: TSESTree.Identifier
-  init: TSESTree.Expression
-}
-
 /**
  * Retrieves the declared variable from a given statement node.
  *
  * @param {TSESTree.Statement} node - The statement node to extract the declared variable from.
- * @returns {DeclaredVariable} An object containing the identifier and initializer expression of the declared variable, or `undefined` if the node does not represent a valid declaration.
+ * @returns {TSESTree.LetOrConstOrVarDeclarator | undefined} An object containing the identifier and initializer expression of the declared variable, or `undefined` if the node does not represent a valid declaration.
  */
-export function getDeclaredVariable(node: TSESTree.Statement): DeclaredVariable | undefined {
+export function getDeclaredVariable(node: TSESTree.Statement): TSESTree.LetOrConstOrVarDeclarator | undefined {
   if (isVariableDeclaration(node) && node.declarations.length === 1) {
     const declaration = node.declarations[0]
     if (isIdentifier(declaration?.id) && declaration.init && !declaration.id.typeAnnotation) {
-      return { id: declaration.id, init: declaration.init }
+      return declaration
     }
   }
   return undefined
