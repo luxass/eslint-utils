@@ -1,7 +1,7 @@
 {
   "name": "@luxass/eslint-utils",
   "version": "0.0.5",
-  "description": "GitHub's GraphQL schema",
+  "description": "ESlint utilities",
   "type": "module",
   "author": {
     "name": "Lucas Nørgård",
@@ -13,7 +13,7 @@
   "homepage": "https://github.com/luxass/eslint-utils",
   "repository": {
     "type": "git",
-    "url": "https://github.com/luxass/eslint-utils"
+    "url": "git+https://github.com/luxass/eslint-utils.git"
   },
   "bugs": {
     "url": "https://github.com/luxass/eslint-utils/issues"
