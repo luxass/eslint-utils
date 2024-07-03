@@ -1,5 +1,5 @@
-import type { TSESLint, TSESTree } from '@typescript-eslint/utils'
-import { isIdentifier, isReturnStatement, isThrowStatement, isVariableDeclaration } from './predicates'
+import type { TSESLint, TSESTree } from "@typescript-eslint/utils";
+import { isIdentifier, isReturnStatement, isThrowStatement, isVariableDeclaration } from "./predicates";
 
 /**
  * Retrieves the returned variable from a given statement node.
@@ -12,7 +12,7 @@ export function getReturnedVariable(node: TSESTree.Statement): TSESTree.Identifi
     && node.argument
     && isIdentifier(node.argument)
     ? node.argument
-    : undefined
+    : undefined;
 }
 
 /**
@@ -23,12 +23,12 @@ export function getReturnedVariable(node: TSESTree.Statement): TSESTree.Identifi
  */
 export function getDeclaredVariable(node: TSESTree.Statement): TSESTree.LetOrConstOrVarDeclarator | undefined {
   if (isVariableDeclaration(node) && node.declarations.length === 1) {
-    const declaration = node.declarations[0]
+    const declaration = node.declarations[0];
     if (isIdentifier(declaration?.id) && declaration.init && !declaration.id.typeAnnotation) {
-      return declaration
+      return declaration;
     }
   }
-  return undefined
+  return undefined;
 }
 
 /**
@@ -41,8 +41,8 @@ export function getDeclaredVariables(
   scope: TSESLint.Scope.Scope,
 ): TSESLint.Scope.Variable[] {
   if (scope.variableScope === scope) {
-    return scope.variables
+    return scope.variables;
   }
 
-  return scope.variables.concat(scope.variableScope.variables)
+  return scope.variables.concat(scope.variableScope.variables);
 }

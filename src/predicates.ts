@@ -1,4 +1,4 @@
-import type { TSESTree } from '@typescript-eslint/utils'
+import type { TSESTree } from "@typescript-eslint/utils";
 
 /**
  * Checks if a given node is an Identifier.
@@ -7,7 +7,7 @@ import type { TSESTree } from '@typescript-eslint/utils'
  * @returns {node is TSESTree.Identifier} `true` if the node is an Identifier, `false` otherwise.
  */
 export function isIdentifier(node: TSESTree.Node | undefined): node is TSESTree.Identifier {
-  return node !== undefined && node.type === 'Identifier'
+  return node !== undefined && node.type === "Identifier";
 }
 
 /**
@@ -17,7 +17,7 @@ export function isIdentifier(node: TSESTree.Node | undefined): node is TSESTree.
  * @returns {node is TSESTree.Literal} `true` if the node is a Literal, `false` otherwise.
  */
 export function isLiteral(node: TSESTree.Node | undefined): node is TSESTree.Literal {
-  return node !== undefined && node.type === 'Literal'
+  return node !== undefined && node.type === "Literal";
 }
 
 /**
@@ -28,7 +28,7 @@ export function isLiteral(node: TSESTree.Node | undefined): node is TSESTree.Lit
 export function isFunctionDeclaration(
   node: TSESTree.Node | undefined,
 ): node is TSESTree.FunctionDeclaration {
-  return node !== undefined && node.type === 'FunctionDeclaration'
+  return node !== undefined && node.type === "FunctionDeclaration";
 }
 
 /**
@@ -39,7 +39,7 @@ export function isFunctionDeclaration(
 export function isFunctionExpression(
   node: TSESTree.Node | undefined,
 ): node is TSESTree.FunctionExpression {
-  return node !== undefined && node.type === 'FunctionExpression'
+  return node !== undefined && node.type === "FunctionExpression";
 }
 
 /**
@@ -48,7 +48,7 @@ export function isFunctionExpression(
  * @returns {node is TSESTree.ThrowStatement} `true` if the node is a ThrowStatement, `false` otherwise.
  */
 export function isThrowStatement(node: TSESTree.Node | undefined): node is TSESTree.ThrowStatement {
-  return node !== undefined && node.type === 'ThrowStatement'
+  return node !== undefined && node.type === "ThrowStatement";
 }
 
 /**
@@ -59,7 +59,7 @@ export function isThrowStatement(node: TSESTree.Node | undefined): node is TSEST
 export function isReturnStatement(
   node: TSESTree.Node | undefined,
 ): node is TSESTree.ReturnStatement {
-  return node !== undefined && node.type === 'ReturnStatement'
+  return node !== undefined && node.type === "ReturnStatement";
 }
 
 /**
@@ -70,5 +70,5 @@ export function isReturnStatement(
 export function isVariableDeclaration(
   node: TSESTree.Node | undefined,
 ): node is TSESTree.VariableDeclaration {
-  return node !== undefined && node.type === 'VariableDeclaration'
+  return node !== undefined && node.type === "VariableDeclaration";
 }

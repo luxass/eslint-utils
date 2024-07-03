@@ -2,13 +2,13 @@ import type {
   RuleListener,
   RuleWithMeta,
   RuleWithMetaAndName,
-} from '@typescript-eslint/utils/eslint-utils'
-import type { RuleContext } from '@typescript-eslint/utils/ts-eslint'
-import type { Rule } from 'eslint'
+} from "@typescript-eslint/utils/eslint-utils";
+import type { RuleContext } from "@typescript-eslint/utils/ts-eslint";
+import type { Rule } from "eslint";
 
 export interface RuleModule<T extends readonly unknown[]>
   extends Rule.RuleModule {
-  defaultOptions: T
+  defaultOptions: T;
 }
 
 /**
@@ -39,8 +39,8 @@ function RuleCreator(urlCreator: (ruleName: string) => string): <TOptions extend
         },
       },
       ...rule,
-    })
-  }
+    });
+  };
 }
 
 /**
@@ -65,13 +65,13 @@ function createRule<
         return {
           ...(defaultOptions[index] || {}),
           ...(options || {}),
-        }
-      }) as unknown as TOptions
-      return create(context, optionsWithDefault)
+        };
+      }) as unknown as TOptions;
+      return create(context, optionsWithDefault);
     }) as any,
     defaultOptions,
     meta: meta as any,
-  }
+  };
 }
 
 /**
@@ -86,7 +86,7 @@ export const createEslintRule: <TOptions extends readonly unknown[], TMessageIds
   name,
   meta,
   ...rule
-}: Readonly<RuleWithMetaAndName<TOptions, TMessageIds>>) => RuleModule<TOptions>
+}: Readonly<RuleWithMetaAndName<TOptions, TMessageIds>>) => RuleModule<TOptions>;
 
 /**
  * Creates an ESLint rule builder.
@@ -94,5 +94,5 @@ export const createEslintRule: <TOptions extends readonly unknown[], TMessageIds
  * @returns A function that creates an ESLint rule with the provided documentation URL.
  */
 export function createESLintRuleBuilder(docsUrl: string): typeof createEslintRule {
-  return RuleCreator((ruleName) => `${docsUrl.replace('$RULE_NAME', ruleName)}`)
+  return RuleCreator((ruleName) => `${docsUrl.replace("$RULE_NAME", ruleName)}`);
 }

@@ -14,17 +14,17 @@ npm install @luxass/eslint-utils
 ## 📚 Usage
 
 ```ts
-import { createESLintRuleBuilder, createEslintRule } from '@luxass/eslint-utils'
+import { createESLintRuleBuilder, createEslintRule } from "@luxass/eslint-utils";
 
-const createESLintRule = createEslintRuleBuilder('https://github.com/luxass/eslint-plugin-overdrive/blob/main/src/rules/$RULE_NAME.md')
+const createESLintRule = createEslintRuleBuilder("https://github.com/luxass/eslint-plugin-overdrive/blob/main/src/rules/$RULE_NAME.md");
 
-const preferNothing = createESLintRule<[], 'preferNothing'>({
-  name: 'preferNothing',
+const preferNothing = createESLintRule<[], "preferNothing">({
+  name: "preferNothing",
   meta: {
-    type: 'suggestion',
+    type: "suggestion",
     docs: {
-      description: 'Prefer nothing',
-      recommended: 'error',
+      description: "Prefer nothing",
+      recommended: "error",
     },
     schema: [],
   },
@@ -34,15 +34,15 @@ const preferNothing = createESLintRule<[], 'preferNothing'>({
       Program(node) {
         context.report({
           node,
-          messageId: 'preferNothing',
-        })
+          messageId: "preferNothing",
+        });
       },
-    }
+    };
   },
   messages: {
-    preferNothing: 'Prefer nothing',
+    preferNothing: "Prefer nothing",
   },
-})
+});
 // the rule will now have the following docs url "https://github.com/luxass/eslint-plugin-overdrive/blob/main/src/rules/prefer-nothing.md"
 ```
 
