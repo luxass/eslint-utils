@@ -1,6 +1,6 @@
 {
   "name": "@luxass/eslint-utils",
-  "version": "0.0.6",
+  "version": "0.1.0",
   "exports": {
     ".": "./src/index.ts",
     "./variables": "./src/variables.ts",
