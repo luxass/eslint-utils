@@ -6,6 +6,7 @@ export default defineConfig(
       "./src/index.ts",
       "./src/predicates.ts",
       "./src/variables.ts",
+      "./src/rule-composer.ts",
     ],
     format: ["cjs", "esm"],
     clean: true,
