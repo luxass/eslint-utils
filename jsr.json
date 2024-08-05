@@ -4,7 +4,8 @@
   "exports": {
     ".": "./src/index.ts",
     "./variables": "./src/variables.ts",
-    "./predicates": "./src/predicates.ts"
+    "./predicates": "./src/predicates.ts",
+    "./rule-composer": "./src/rule-composer.ts"
   },
   "exclude": [
     "tsup.config.ts",
