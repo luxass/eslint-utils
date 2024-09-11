@@ -54,6 +54,16 @@
         "default": "./dist/predicates.cjs"
       }
     },
+    "./rule-composer": {
+      "import": {
+        "types": "./dist/rule-composer.d.ts",
+        "default": "./dist/rule-composer.mjs"
+      },
+      "require": {
+        "types": "./dist/rule-composer.d.cts",
+        "default": "./dist/rule-composer.cjs"
+      }
+    },
     "./package.json": "./package.json"
   },
   "main": "dist/index.cjs",
