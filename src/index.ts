@@ -86,7 +86,8 @@ export const createEslintRule: <TOptions extends readonly unknown[], TMessageIds
   name,
   meta,
   ...rule
-}: Readonly<RuleWithMetaAndName<TOptions, TMessageIds>>) => RuleModule<TOptions>;
+}: Readonly<RuleWithMetaAndName<TOptions, TMessageIds>>
+) => RuleModule<TOptions>;
 
 /**
  * Creates an ESLint rule builder.

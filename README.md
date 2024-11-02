@@ -14,7 +14,7 @@ npm install @luxass/eslint-utils
 ## 📚 Usage
 
 ```ts
-import { createESLintRuleBuilder, createEslintRule } from "@luxass/eslint-utils";
+import { createEslintRule, createESLintRuleBuilder } from "@luxass/eslint-utils";
 
 const createESLintRule = createEslintRuleBuilder("https://github.com/luxass/eslint-plugin-overdrive/blob/main/src/rules/$RULE_NAME.md");
 

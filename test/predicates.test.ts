@@ -1,6 +1,6 @@
-import { describe, expect, it } from "vitest";
-import { parse } from "@typescript-eslint/typescript-estree";
 import type { TSESTree } from "@typescript-eslint/utils";
+import { parse } from "@typescript-eslint/typescript-estree";
+import { describe, expect, it } from "vitest";
 import {
   isFunctionDeclaration,
   isFunctionExpression,

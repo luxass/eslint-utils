@@ -1,5 +1,5 @@
-import { analyze } from "@typescript-eslint/scope-manager";
 import type { TSESTree } from "@typescript-eslint/typescript-estree";
+import { analyze } from "@typescript-eslint/scope-manager";
 import { parse } from "@typescript-eslint/typescript-estree";
 import { describe, expect, it } from "vitest";
 import { getDeclaredVariable, getDeclaredVariables, getReturnedVariable } from "../src/variables";
