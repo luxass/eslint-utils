@@ -78,7 +78,7 @@
   },
   "devDependencies": {
     "@luxass/eslint-config": "^4.15.0",
-    "@types/eslint": "^8.56.12",
+    "@types/eslint": "^9.0.0",
     "@types/node": "^22.0.0",
     "@typescript-eslint/scope-manager": "^8.20.0",
     "@typescript-eslint/utils": "^8.20.0",
