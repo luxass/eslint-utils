@@ -9,10 +9,10 @@ importers:
   .:
     devDependencies:
       '@luxass/eslint-config':
-        specifier: ^5.0.0
+        specifier: 5.1.1
         version: 5.1.1(@vue/compiler-sfc@3.4.21)(eslint-plugin-format@1.0.1(eslint@9.31.0))(eslint@9.31.0)(typescript@5.8.3)(vitest@3.2.4(@types/debug@4.1.12)(@types/node@22.16.5)(yaml@2.8.0))
       '@types/node':
-        specifier: ^22.0.0
+        specifier: 22.16.5
         version: 22.16.5
       '@typescript-eslint/scope-manager':
         specifier: ^8.20.0
@@ -30,10 +30,10 @@ importers:
         specifier: ^1.0.1
         version: 1.0.1(eslint@9.31.0)
       tsup:
-        specifier: ^8.3.5
+        specifier: 8.5.0
         version: 8.5.0(postcss@8.5.6)(typescript@5.8.3)(yaml@2.8.0)
       typescript:
-        specifier: ^5.7.3
+        specifier: 5.8.3
         version: 5.8.3
       vitest:
         specifier: 3.2.4
