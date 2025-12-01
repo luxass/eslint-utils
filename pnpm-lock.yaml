@@ -15,19 +15,19 @@ importers:
         specifier: 22.16.5
         version: 22.16.5
       '@typescript-eslint/scope-manager':
-        specifier: ^8.20.0
+        specifier: 8.38.0
         version: 8.38.0
       '@typescript-eslint/typescript-estree':
-        specifier: ^8.33.1
+        specifier: 8.38.0
         version: 8.38.0(typescript@5.8.3)
       '@typescript-eslint/utils':
-        specifier: ^8.20.0
+        specifier: 8.38.0
         version: 8.38.0(eslint@9.31.0)(typescript@5.8.3)
       eslint:
-        specifier: ^9.18.0
+        specifier: 9.31.0
         version: 9.31.0
       eslint-plugin-format:
-        specifier: ^1.0.1
+        specifier: 1.0.1
         version: 1.0.1(eslint@9.31.0)
       tsup:
         specifier: 8.5.0
